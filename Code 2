@@ -7,14 +7,14 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1200,
         "fields": {
-            "description": "What will you say to the American people as you accept your party's nomination for President?"
+            "description": "You have been the nominee for almost two months now and the Republicans finally made up their mind on who you'll be facing. They made, arguably, the worst choice of candidate in the entire senate. Attorney General Ken Paxton has officially won the runoff between him and Incumbent Senator John Cornyn. Polls already had you in a tight contest against Cornyn but now they have clearly put this race in D territory with someone like Paxton as the nominee. What will your strategy be for this Campaign?"
         }
     },
     {
         "model": "campaign_trail.question",
         "pk": 1201,
         "fields": {
-            "description": "Which of these themes will you emphasize the most as you campaign for President this year?"
+            "description": "With the election in full swing it's time to make some allies in the democratic establishment."
         }
     },
     {
@@ -189,7 +189,7 @@ campaignTrail_temp.answers_json = [
         "pk": 6000,
         "fields": {
             "question": 1200,
-            "description": "This election is a battle for the soul of America. If Donald Trump is President for four more years, the damage to this nation may be irreversible."
+            "description": "This election is a battle for the soul of Texas. Paxton represents the rotting structure of Republican rule in Texas. They take your votes for granted but no more. This time you can show them you aren't to be taken for granted."
         }
     },
     {
@@ -197,7 +197,7 @@ campaignTrail_temp.answers_json = [
         "pk": 6001,
         "fields": {
             "question": 1200,
-            "description": "We're going to build back better than ever before. I'm going to work for every American, repairing our critical infrastructure at home and our standing in the world."
+            "description": "Texas is called the Republican crown jewel. I believe it should just be The Crown Jewel. Texas is the center of America, we are the most important state but it seems to me that Republicans only see you like a second Oklahoma. I see you as my people."
         }
     },
     {
@@ -205,15 +205,7 @@ campaignTrail_temp.answers_json = [
         "pk": 6002,
         "fields": {
             "question": 1200,
-            "description": "I will be a President for all Americans. Black, brown, Latino, gay, straight, Christian, Jewish, Muslim, rich, poor, or middle-class. I'm a uniter, not a divider."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 6003,
-        "fields": {
-            "question": 1200,
-            "description": "We have a President who turns his back on science, decency, and truth itself. A President who spends more time watching Fox News than he does doing his job. We need an adult in the White House."
+            "description": "America has seen the disaster that comes from Republican leadership. Donald Trump and his lackies running wild without any limitations has brought this nation to the brink. This election is the moment we choose. Do we want more of the same or do we want change?"
         }
     },
     {
@@ -21755,8 +21747,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 6002,
             "candidate": 91,
-            "affected_candidate": 92,
-            "global_multiplier": 0.001125
+            "affected_candidate": 91,
+            "global_multiplier": 0.02
         }
     },
     {
@@ -22238,100 +22230,60 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 92,
             "global_multiplier": -0.00138
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 45993,
+        "fields": {
+            "answer": 6000,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "global_multiplier": 0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 45994,
+        "fields": {
+            "answer": 6000,
+            "candidate": 91,
+            "affected_candidate": 92,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 45995,
+        "fields": {
+            "answer": 6001,
+            "candidate": 91,
+            "affected_candidate": 91,
+            "global_multiplier": 0.022
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 45996,
+        "fields": {
+            "answer": 6001,
+            "candidate": 91,
+            "affected_candidate": 92,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 45997,
+        "fields": {
+            "answer": 6002,
+            "candidate": 91,
+            "affected_candidate": 92,
+            "global_multiplier": -0.025
+        }
     }
 ];
 
 campaignTrail_temp.answer_score_issue_json = [
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3000,
-        "fields": {
-            "answer": 6000,
-            "issue": 110,
-            "issue_score": 0.5356,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3001,
-        "fields": {
-            "answer": 6000,
-            "issue": 114,
-            "issue_score": 0.6356,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3002,
-        "fields": {
-            "answer": 6001,
-            "issue": 110,
-            "issue_score": 0.4356,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3003,
-        "fields": {
-            "answer": 6001,
-            "issue": 111,
-            "issue_score": 0.3894,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3004,
-        "fields": {
-            "answer": 6001,
-            "issue": 113,
-            "issue_score": 0.1971,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3005,
-        "fields": {
-            "answer": 6002,
-            "issue": 110,
-            "issue_score": 0.5356,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3006,
-        "fields": {
-            "answer": 6002,
-            "issue": 114,
-            "issue_score": 0.7356,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3007,
-        "fields": {
-            "answer": 6003,
-            "issue": 112,
-            "issue_score": 0.4087,
-            "issue_importance": 1
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 3008,
-        "fields": {
-            "answer": 6003,
-            "issue": 114,
-            "issue_score": 0.6356,
-            "issue_importance": 1
-        }
-    },
     {
         "model": "campaign_trail.answer_score_issue",
         "pk": 3009,
@@ -23609,7 +23561,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 6000,
             "candidate": 91,
-            "answer_feedback": "Pundits are noting a strong focus on Donald Trump's excesses in your opening speeches. Are you satisfied to make this election a referendum on Trump?"
+            "answer_feedback": "Pollsters are noticing the Talarico shift. Texas has been considered as the unwinnable swing state but this time it seems like the unwinnable might be dropped."
         }
     },
     {
@@ -23618,7 +23570,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 6001,
             "candidate": 91,
-            "answer_feedback": "Pundits are noting a strong focus on infrastructure and the economy in your opening speeches."
+            "answer_feedback": "Clearly you are going for an Anti-Republican strategy. Texan are starting to feel a party fatigue after nearly 30 years of blood red leadership."
         }
     },
     {
@@ -23627,16 +23579,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 6002,
             "candidate": 91,
-            "answer_feedback": "Pundits are noting a strong focus on unity and diversity in your opening speeches."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 3011,
-        "fields": {
-            "answer": 6003,
-            "candidate": 91,
-            "answer_feedback": "Pundits are noting a serious tone and a focus on COVID and competency in your opening speeches."
+            "answer_feedback": "With your attacks on Trump and Paxton being his hand picked choice it becomes clear that these attacks will hurt him a lot more than most thought he'd lose."
         }
     },
     {
@@ -24088,6 +24031,490 @@ campaignTrail_temp.running_mate_last_name = "Talarico";
     }
 })();
 // [TCT_BANNER_SIGN_END]
+// [JETS_ENDINGS_START]
+campaignTrail_temp.multiple_endings = true;
+
+const endingDefs = [
+    {
+        "id": 1795704963153,
+        "variable": 1,
+        "operator": ">=",
+        "amount": 57.5,
+        "endingTitle": "James Talarico dominates Texas",
+        "endingSubtitle": "The Return of Texas Democrats.",
+        "endingText": "You've done",
+        "endingImage": "",
+        "endingHideImage": false,
+        "endingSlidesJson": "[\n  {\n    \"variable\": 1,\n    \"operator\": \">=\",\n    \"amount\": 57.5,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"James Talarico dominates Texas\",\n    \"subtitle\": \"The Return of Texas Democrats.\",\n    \"content\": \"You've done\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  },\n  {\n    \"variable\": 1,\n    \"operator\": \">\",\n    \"amount\": 52,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"James Talarico elected Senator of Texas\",\n    \"subtitle\": \"Hinojosa loses in shockingly close Governors race\",\n    \"content\": \"\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  },\n  {\n    \"variable\": 1,\n    \"operator\": \">=\",\n    \"amount\": 50,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Paxton calls fraud in Texas Senate Race\",\n    \"subtitle\": \"Talarico barely edges out a win\",\n    \"content\": \"\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  },\n  {\n    \"variable\": 1,\n    \"operator\": \"<\",\n    \"amount\": 50,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Paxton holds on\",\n    \"subtitle\": \"Texas remains the ruby red jewel\",\n    \"content\": \"\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  }\n]",
+        "audioTitle": "",
+        "audioArtist": "",
+        "audioCover": "",
+        "audioUrl": "",
+        "endingAccentColor": "#11299e",
+        "endingBackgroundColor": "#ffffff",
+        "endingTextColor": "#000000",
+        "variableConditions": [],
+        "variableConditionOperator": "AND",
+        "outcomeCondition": "ignore",
+        "answerConditionType": "ignore",
+        "answerConditionAnswer": "",
+        "answerConditionAnswers": ""
+    }
+];
+
+const opMap = {
+    ">": (a, b) => a > b,
+    ">=": (a, b) => a >= b,
+    "==": (a, b) => a == b,
+    "<=": (a, b) => a <= b,
+    "<": (a, b) => a < b,
+    "!=": (a, b) => a != b
+};
+
+const getEndingImageEl = () => {
+    const imageContainer = document.querySelector(".person_image");
+    if (!imageContainer) return null;
+    if (imageContainer.tagName && imageContainer.tagName.toLowerCase() === "img") {
+        return imageContainer;
+    }
+    return imageContainer.querySelector("img");
+};
+
+const readVariable = (name) => {
+    if (!name || typeof name !== "string") return undefined;
+    if (!/^[A-Za-z_$][A-Za-z0-9_$]*$/.test(name)) return undefined;
+    try {
+        return eval("(typeof " + name + " !== 'undefined') ? " + name + " : undefined;");
+    } catch (_err) {
+        return undefined;
+    }
+};
+
+const parseConditionValue = (value) => {
+    if (value == null || value === "") return "";
+    const n = Number(value);
+    if (!Number.isNaN(n)) return n;
+    return value;
+};
+
+const checkOutcomeCondition = (entry, finalOutcome) => {
+    const cond = String(entry?.outcomeCondition || "ignore");
+    if (cond === "ignore") return true;
+    return cond === String(finalOutcome || "");
+};
+
+const matchesPrimaryCondition = (entry, quickstats, finalOutcome) => {
+    if (!checkOutcomeCondition(entry, finalOutcome)) return false;
+
+    const cond = String(entry?.outcomeCondition || "ignore");
+    if (cond !== "ignore") {
+        // explicit outcome match bypasses stat threshold checks
+        return true;
+    }
+
+    const opFn = opMap[entry?.operator] || opMap[">"];
+    const left = quickstats?.[Number(entry?.variable) || 0];
+    const right = Number(entry?.amount) || 0;
+    return opFn(left, right);
+};
+
+const checkExtraConditions = (entry, playerAnswers) => {
+    // check variable conditions
+    if (Array.isArray(entry.variableConditions) && entry.variableConditions.length > 0) {
+        const operator = entry.variableConditionOperator || "AND";
+        const results = entry.variableConditions.map((cond) => {
+            const left = readVariable(cond.variable);
+            const right = parseConditionValue(cond.value);
+            const opFn = opMap[cond.comparator] || opMap["=="];
+            return opFn(left, right);
+        });
+
+        if (operator === "AND") {
+            if (!results.every((r) => r)) return false;
+        } else if (operator === "OR") {
+            if (!results.some((r) => r)) return false;
+        }
+    }
+
+    const answerType = entry.answerConditionType || "ignore";
+    if (answerType !== "ignore") {
+        const rawAnswers = String(entry.answerConditionAnswers || entry.answerConditionAnswer || "").trim();
+        const answerIds = rawAnswers
+            .split(/[s,]+/)
+            .filter((v) => v.length > 0)
+            .map((v) => Number(v))
+            .filter((v) => Number.isFinite(v));
+
+        if (answerIds.length === 0) return false;
+
+        const hasAny = Array.isArray(playerAnswers) && answerIds.some((id) => playerAnswers.includes(id));
+        if (answerType === "has" && !hasAny) return false;
+        if (answerType === "not_has" && hasAny) return false;
+    }
+
+    return true;
+};
+
+const playEndingSong = (title, artist, cover, url) => {
+    if (!url) return;
+    const PlaylistCtor = (typeof window !== "undefined" && window.Playlist)
+        || (typeof Playlist !== "undefined" ? Playlist : null);
+    const SongCtor = (typeof window !== "undefined" && window.Song)
+        || (typeof Song !== "undefined" ? Song : null);
+    const changePlaylistFn = (typeof window !== "undefined" && window.changePlaylist)
+        || (typeof changePlaylist === "function" ? changePlaylist : null);
+
+    if (PlaylistCtor && SongCtor && typeof changePlaylistFn === "function") {
+        try {
+            const playlist = new PlaylistCtor();
+            const song = new SongCtor(title || "", artist || "", cover || "", url);
+            if (typeof playlist.addSong === "function") {
+                playlist.addSong(song);
+                changePlaylistFn(playlist);
+                return;
+            }
+        } catch (err) {
+            console.warn("Failed to route ending song:", err);
+        }
+    }
+
+    // fallback for custom players: drive the shared audio element directly
+    const audioEl = document.getElementById("audio") || document.querySelector("audio#audio, audio");
+    if (!audioEl) return;
+
+    if (audioEl.src !== url) {
+        audioEl.src = url;
+    }
+
+    const player = document.getElementById("player");
+    if (player) {
+        const titleEl = player.querySelector("#title");
+        const artistEl = player.querySelector("#artist");
+        const coverEl = player.querySelector("#cover");
+        if (titleEl) titleEl.textContent = title || "";
+        if (artistEl) artistEl.textContent = artist || "";
+        if (coverEl && cover) coverEl.src = cover;
+    }
+
+    const playPromise = audioEl.play?.();
+    if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+    }
+};
+
+const styleEndingDescription = () => {
+    const desc = document.querySelector("#final_results_description");
+    if (!desc) return;
+
+    const e = campaignTrail_temp;
+    const theme = e._endingTheme || {};
+    const bg = theme.backgroundColor || "#ffffff";
+    const fg = theme.textColor || "#000000";
+    const border = theme.accentColor || "#11299e";
+    const isBorderTransparent = String(border).toLowerCase() === "transparent";
+
+    Object.assign(desc.style, {
+        textAlign: "left",
+        width: "72%",
+        maxHeight: "20em",
+        minHeight: "8em",
+        height: "auto",
+        display: "block",
+        margin: "0 auto",
+        overflowY: "auto",
+        overflowX: "hidden",
+        whiteSpace: "normal",
+        overflowWrap: "anywhere",
+        wordBreak: "break-word",
+        transform: "translateZ(0)",
+        backgroundColor: bg,
+        color: fg,
+        border: isBorderTransparent ? "none" : "2px solid " + border,
+        borderRadius: "4px",
+        padding: "10px"
+    });
+
+    desc.dataset.endingStyled = "1";
+};
+
+const applyEndingImage = (slide) => {
+    const imageEl = getEndingImageEl();
+    if (!imageEl || !slide) return;
+
+    if (slide.image === false) {
+        imageEl.style.display = "none";
+        imageEl.removeAttribute("src");
+        return;
+    }
+
+    const e = campaignTrail_temp;
+    const theme = e._endingTheme || {};
+    const border = theme.accentColor || "#11299e";
+    const imageBorder = String(border).toLowerCase() === "transparent" ? "none" : "3px solid " + border;
+
+    if (!imageEl.dataset.endingStyled) {
+        Object.assign(imageEl.style, {
+            border: imageBorder,
+            display: "block",
+            width: "210px",
+            height: "250px",
+            objectFit: "cover"
+        });
+        imageEl.dataset.endingStyled = "1";
+    } else {
+        imageEl.style.display = "block";
+        imageEl.style.border = imageBorder;
+    }
+
+    if (slide.image && imageEl.getAttribute("src") !== slide.image) {
+        imageEl.src = slide.image;
+    }
+};
+
+const applyEndingButtons = () => {
+    const e = campaignTrail_temp;
+    const theme = e._endingTheme || {};
+    const imageEl = getEndingImageEl();
+    if (!imageEl || !imageEl.parentNode) return;
+
+    let btnContainer = document.getElementById("ending_slide_buttons");
+    if (!btnContainer) {
+        btnContainer = document.createElement("div");
+        btnContainer.id = "ending_slide_buttons";
+        Object.assign(btnContainer.style, {
+            display: "flex",
+            gap: "20px",
+            left: "13px",
+            top: "280px",
+            position: "absolute"
+        });
+        imageEl.parentNode.insertBefore(btnContainer, imageEl.nextSibling);
+    }
+
+    let buttonsHtml = "";
+    if (e.page > 0) {
+        buttonsHtml += '<button onclick="endingConstructor(-1)">Back</button>';
+    }
+    if (e.page < e.endingSlides.length - 1) {
+        buttonsHtml += '<button onclick="endingConstructor(1)">Next</button>';
+    }
+
+    if (btnContainer.innerHTML !== buttonsHtml) {
+        btnContainer.innerHTML = buttonsHtml;
+    }
+
+    const buttonBg = theme.accentColor || "#11299e";
+    const isBtnTransparent = String(buttonBg).toLowerCase() === "transparent";
+    const buttonBgColor = isBtnTransparent ? "transparent" : buttonBg;
+    const buttonText = isBtnTransparent ? (theme.textColor || "#000000") : "#ffffff";
+    const buttonBorder = isBtnTransparent ? ("1px solid " + buttonText) : ("1px solid " + buttonBg);
+
+    btnContainer.querySelectorAll("button").forEach((btn) => {
+        Object.assign(btn.style, {
+            backgroundColor: buttonBgColor,
+            border: buttonBorder,
+            color: buttonText,
+            padding: "4px 10px",
+            cursor: "pointer"
+        });
+    });
+};
+
+const syncEndingSlideDom = () => {
+    const e = campaignTrail_temp;
+    const slide = e.endingSlides?.[e.page];
+    if (!slide) return;
+
+    styleEndingDescription();
+    applyEndingImage(slide);
+    applyEndingButtons();
+
+    if (slide.audio && slide.audio.url) {
+        const key = [slide.audio.title || "", slide.audio.artist || "", slide.audio.url || ""].join("|");
+        const globalKey = (typeof window !== "undefined" && window.__tctLastEndingAudioKey) || "";
+
+        const currentAudioEl = document.getElementById("audio") || document.querySelector("audio#audio, audio");
+        const currentSrc = currentAudioEl ? (currentAudioEl.currentSrc || currentAudioEl.src || "") : "";
+        const sameSrcLoaded = !!currentSrc && currentSrc.includes(slide.audio.url);
+
+        if (e._endingAudioPlayedKey !== key && globalKey !== key && !sameSrcLoaded) {
+            playEndingSong(slide.audio.title, slide.audio.artist, slide.audio.cover, slide.audio.url);
+        }
+
+        e._endingAudioPlayedKey = key;
+        if (typeof window !== "undefined") {
+            window.__tctLastEndingAudioKey = key;
+        }
+    }
+};
+
+const syncEndingSlideDomDeferred = () => {
+    requestAnimationFrame(() => {
+        syncEndingSlideDom();
+    });
+};
+
+const buildSlides = (entry, quickstats, finalOutcome) => {
+    if (entry && entry.endingSlidesJson) {
+        try {
+            const parsed = JSON.parse(entry.endingSlidesJson);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+                const normalizeSlide = (slide) => ({
+                    variable: Number(slide?.variable ?? 0),
+                    operator: slide?.operator || ">",
+                    amount: Number(slide?.amount ?? 0),
+                    outcomeCondition: slide?.outcomeCondition || "ignore",
+                    title: slide?.title || "",
+                    subtitle: slide?.subtitle || "",
+                    content: slide?.content || "",
+                    image: slide?.image,
+                    audio: slide?.audio && slide.audio.url ? {
+                        title: slide.audio.title || "",
+                        artist: slide.audio.artist || "",
+                        cover: slide.audio.cover || "",
+                        url: slide.audio.url || ""
+                    } : undefined
+                });
+
+                const hasGroups = parsed.some((slide) => slide && slide.slideGroup);
+                if (!hasGroups) {
+                    return parsed.map((slide) => normalizeSlide(slide));
+                }
+
+                const groupMap = new Map();
+                const groupOrder = [];
+                for (const slide of parsed) {
+                    const groupKey = slide?.slideGroup || "main";
+                    if (!groupMap.has(groupKey)) {
+                        groupMap.set(groupKey, []);
+                        groupOrder.push(groupKey);
+                    }
+                    groupMap.get(groupKey).push(slide);
+                }
+
+                const playerAnswers = campaignTrail_temp?.player_answers || [];
+                const selectedSlides = [];
+
+                for (const groupKey of groupOrder) {
+                    const groupSlides = groupMap.get(groupKey) || [];
+                    let selected = groupSlides.find((slide) => {
+                        return matchesPrimaryCondition(slide, quickstats, finalOutcome)
+                            && checkExtraConditions(slide, playerAnswers);
+                    });
+                    if (!selected) selected = groupSlides[0];
+                    if (selected) selectedSlides.push(normalizeSlide(selected));
+                }
+
+                return selectedSlides;
+            }
+        } catch (err) {
+            console.warn("Invalid endingSlidesJson for ending", entry?.id, err);
+        }
+    }
+
+    const fallbackSlide = {
+        title: entry?.endingTitle || "",
+        subtitle: entry?.endingSubtitle || "",
+        content: entry?.endingText || "",
+        image: entry?.endingHideImage ? false : (entry?.endingImage || undefined)
+    };
+
+    if (entry?.audioUrl) {
+        fallbackSlide.audio = {
+            title: entry.audioTitle || "",
+            artist: entry.audioArtist || "",
+            cover: entry.audioCover || "",
+            url: entry.audioUrl || ""
+        };
+    }
+
+    return [fallbackSlide];
+};
+
+const constructSlide = (direction = 1) => {
+    const e = campaignTrail_temp;
+    if (!Array.isArray(e.endingSlides) || e.endingSlides.length === 0) return "";
+
+    e.page += direction;
+    if (e.page < 0) e.page = 0;
+    if (e.page >= e.endingSlides.length) e.page = e.endingSlides.length - 1;
+
+    const currentSlide = e.endingSlides[e.page];
+    if (!currentSlide) return "";
+
+    let html = "";
+    if (currentSlide.title) html += "<h3>" + currentSlide.title + "</h3>";
+    if (currentSlide.subtitle) html += "<h4>" + currentSlide.subtitle + "</h4>";
+    html += (currentSlide.content || "") + "<br><br>";
+    return html;
+};
+
+endingConstructor = (direction = 1) => {
+    const desc = document.querySelector("#final_results_description");
+    if (!desc) return;
+    desc.innerHTML = constructSlide(direction);
+    syncEndingSlideDomDeferred();
+};
+
+endingPicker = (out, totv, aa, quickstats) => {
+    const playerAnswers = campaignTrail_temp?.player_answers || [];
+    for (const entry of endingDefs) {
+        let isMatch = false;
+
+        try {
+            const parsed = entry.endingSlidesJson ? JSON.parse(entry.endingSlidesJson) : [];
+            if (Array.isArray(parsed) && parsed.length > 0) {
+                const groupMap = new Map();
+                for (const slide of parsed) {
+                    const groupKey = slide?.slideGroup || "main";
+                    if (!groupMap.has(groupKey)) {
+                        groupMap.set(groupKey, []);
+                    }
+                    groupMap.get(groupKey).push(slide);
+                }
+
+                const mainSlides = groupMap.get("main") || parsed;
+                let validMain = mainSlides.find((slide) => {
+                    return matchesPrimaryCondition(slide, quickstats, out)
+                        && checkExtraConditions(slide, playerAnswers);
+                });
+
+                if (validMain) isMatch = true;
+            } else {
+                // legacy format without json slides
+                if (matchesPrimaryCondition(entry, quickstats, out) && checkExtraConditions(entry, playerAnswers)) {
+                    isMatch = true;
+                }
+            }
+        } catch(e) {
+            // legacy format without json slides
+            if (matchesPrimaryCondition(entry, quickstats, out) && checkExtraConditions(entry, playerAnswers)) {
+                isMatch = true;
+            }
+        }
+
+        if (isMatch) {
+            const e = campaignTrail_temp;
+            e.multiple_endings = true;
+            e.page = -1;
+            e._endingTheme = {
+                accentColor: (entry?.endingAccentColor != null && entry.endingAccentColor !== "") ? entry.endingAccentColor : "#11299e",
+                backgroundColor: (entry?.endingBackgroundColor != null && entry.endingBackgroundColor !== "") ? entry.endingBackgroundColor : "#ffffff",
+                textColor: (entry?.endingTextColor != null && entry.endingTextColor !== "") ? entry.endingTextColor : "#000000"
+            };
+            e.endingSlides = buildSlides(entry, quickstats, out);
+            e._endingAudioPlayedKey = (typeof window !== "undefined" && window.__tctLastEndingAudioKey) || "";
+
+            const html = constructSlide(1);
+            syncEndingSlideDomDeferred();
+            return html;
+        }
+    }
+
+    return "";
+};
+
+// [JETS_ENDINGS_END]
 
 //#startcode
 campaignTrail_temp.running_mate_state_id = '1104';
@@ -24109,13 +24536,41 @@ campaignTrail_temp.jet_data = [{
     "mapping_data": {
         "dx": -211,
         "dy": -43,
-        "electionPk": "10",
         "x": 840.9090909090909,
         "y": 840.9090909090909
     },
     "mapping_enabled": true,
     "player_candidate": 91,
-    "banner_enabled": true
+    "banner_enabled": true,
+    "endings_enabled": true,
+    "ending_data": {
+        "1795704963153": {
+            "id": 1795704963153,
+            "variable": 1,
+            "operator": ">=",
+            "amount": 57.5,
+            "endingTitle": "James Talarico dominates Texas",
+            "endingSubtitle": "The Return of Texas Democrats.",
+            "endingImage": "",
+            "endingText": "You've done",
+            "endingSlidesJson": "[\n  {\n    \"variable\": 1,\n    \"operator\": \">=\",\n    \"amount\": 57.5,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"James Talarico dominates Texas\",\n    \"subtitle\": \"The Return of Texas Democrats.\",\n    \"content\": \"You've done\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  },\n  {\n    \"variable\": 1,\n    \"operator\": \">\",\n    \"amount\": 52,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"James Talarico elected Senator of Texas\",\n    \"subtitle\": \"Hinojosa loses in shockingly close Governors race\",\n    \"content\": \"\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  },\n  {\n    \"variable\": 1,\n    \"operator\": \">=\",\n    \"amount\": 50,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Paxton calls fraud in Texas Senate Race\",\n    \"subtitle\": \"Talarico barely edges out a win\",\n    \"content\": \"\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  },\n  {\n    \"variable\": 1,\n    \"operator\": \"<\",\n    \"amount\": 50,\n    \"outcomeCondition\": \"ignore\",\n    \"title\": \"Paxton holds on\",\n    \"subtitle\": \"Texas remains the ruby red jewel\",\n    \"content\": \"\",\n    \"image\": \"\",\n    \"slideGroup\": \"main\",\n    \"variableConditions\": [],\n    \"variableConditionOperator\": \"AND\",\n    \"answerConditionType\": \"ignore\",\n    \"answerConditionAnswer\": \"\",\n    \"answerConditionAnswers\": \"\"\n  }\n]",
+            "audioTitle": "",
+            "audioArtist": "",
+            "audioCover": "",
+            "audioUrl": "",
+            "endingAccentColor": "#11299e",
+            "endingBackgroundColor": "#ffffff",
+            "endingTextColor": "#000000",
+            "variableConditionOperator": "AND",
+            "outcomeCondition": "ignore",
+            "answerConditionType": "ignore",
+            "answerConditionAnswer": "",
+            "answerConditionAnswers": "",
+            "variableConditionName": "",
+            "variableConditionValue": "",
+            "endingMode": "simple"
+        }
+    }
 }
 ]
 
